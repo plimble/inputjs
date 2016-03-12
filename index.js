@@ -3,6 +3,9 @@ var joi = require('joi');
 module.exports = function InputJS(data, schema) {
   var valid = joi.validate(data, schema, {stripUnknown: true});
 
+  this.schema = function() {
+    return schema;
+  };
   this.validateError = function() {
     return valid.error;
   };

@@ -3,6 +3,11 @@ Inputjs
 
 Javascript Input Class with Joi validatior
 
+## Install
+```bash
+npm install inputjs --save
+```
+
 ## Example
 
 ```js
